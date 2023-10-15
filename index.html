@@ -1,23 +1,92 @@
+
+</html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="stylesheet" href="style.css" />
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet-->
-</head>
-<body>
-<div role="container" class="container">
-  <div role="image" class="image">
-    <img src="image-qr-code.png" alt="image" />
-  </div>
-  <h2 role="content">Improve your front-end skills by building projects</h2>
-  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level </p>
-</div> 
-</body>
-</html>
+    <title>Frontend Mentor | QR code component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit" />
+    <style>
+      :root {
+        --white: hsl(0, 0%, 100%);
+        --light-grey: hsl(212, 45%, 89%);
+        --grayish-blue: hsl(220, 15%, 55%);
+        --dark-blue: hsl(218, 44%, 22%);
+      }
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        height: 100%;
+        font-family: Outfit;
+        background-color: var(--light-grey);
+      }
+
+      .attribution {
+        position: absolute;
+        font-size: 11px;
+        text-align: center;
+        bottom: 10px;
+        left: 20px;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        text-align: center;
+        width: 288px;
+        height: 465px;
+        padding: 16px;
+        border-radius: 18px;
+        background-color: var(--white);
+        box-shadow: 5px 20px 20px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      h2 {
+        font-size: 22px;
+        font-weight: 700;
+        margin: 10px;
+        margin-top: 18px;
+        color: var(--dark-blue);
+      }
+
+      .card-image {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .card-text {
+        margin: 16px;
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--grayish-blue);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="card">
+        <img class="card-image" src="image-qr-code.png" alt="qr-code" />
+        <h2 class="card-title">Improve your front-end skills by building projects</h2>
+        <p class="card-text">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to <br />
+          the next level
+        </p>
+      </div>
+    </div>
+    <div class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Kaith Menken</a>.</div>
+  </body>
+  </html>
