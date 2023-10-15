@@ -9,8 +9,9 @@
 }
 body{
   height: 100vh;
+  max-width:100%;
   width:370px ;
-  
+  padding:30px;
   display: flex;
   align-items: center;
   justify-content: center;
