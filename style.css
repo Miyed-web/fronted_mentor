@@ -8,10 +8,8 @@
   font-family: 'Outfit', sans-serif;
 }
 body{
-  height: 100vh;
+  height: 100%;
   max-width:100%;
-
-  padding:30px;
   display: flex;
   align-items: center;
   justify-content: center;
